@@ -33,7 +33,6 @@ p {
     margin: 0 auto;
     padding: 16px 16px 96px 16px;
     text-align: center;
-    /* background-color: cadetblue; */
 }
 
 img {
@@ -43,7 +42,6 @@ img {
 
 /* LAYOUT */
 .two-column {
-    /* background-color: beige; */
     width: 80%;
     margin: 42px auto 0 auto;
     display: flex;
@@ -53,7 +51,6 @@ img {
 }
 
 .two-column > .col-left {
-    /* background-color: burlywood; */
     width: 50%;
     padding: 0 16px 0 56px;
     display: flex;
