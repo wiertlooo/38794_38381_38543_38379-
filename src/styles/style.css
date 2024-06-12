@@ -38,6 +38,12 @@ p {
 img {
     max-width: 80%;
     border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 4px rgba(100, 100, 100);
+    transform: rotate(6deg);
 }
 
 /* LAYOUT */
@@ -89,7 +95,7 @@ h1 {
     font-size: 32px;
     cursor: pointer;
     border-radius: 8px;
-    transition: 0.04s;
+    transition: 0.06s;
     color: #0a2540;
 }
 
