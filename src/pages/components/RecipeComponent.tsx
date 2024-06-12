@@ -31,7 +31,7 @@ const RecipeComponent: React.FC<RecipeComponentProps> = ({ type }) => {
 
     const componentsList = componentsArray.map(([key, value], index) => (
         <li key={index}>
-            {key}: {value}
+            {key} - {value}
         </li>
     ));
 

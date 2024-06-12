@@ -4,29 +4,46 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: fontRegular;
+    src: url(Tangerine_Regular.ttf);
+}
+
 html {
     background-color: #fdd09f;
-    font-size: 32px;
+    font-size: 24px;
+    font-family: "Merriweather", serif;
+    font-weight: 00;
+}
+
+h1,
+h2,
+h3 {
+    font-family: fontRegular;
+}
+
+p {
+    line-height: 40px;
 }
 
 .wrapper {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 16px;
+    padding: 16px 16px 96px 16px;
     text-align: center;
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 
 img {
-    max-width: 70%;
-    margin: 0 auto;
+    max-width: 80%;
+    border-radius: 8px;
 }
 
 /* LAYOUT */
 .two-column {
     /* background-color: beige; */
     width: 80%;
-    margin: 0 auto;
+    margin: 42px auto 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,20 +61,20 @@ img {
 }
 
 .two-column > .col-right {
-    /* background-color: darksalmon; */
     width: 50%;
     padding: 0 0 0 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    margin: auto;
 }
 
 /* HEADER, BUTTONS */
 
 h1 {
     margin: 32px 0 0 0;
-    font-size: 72px;
+    font-size: 112px;
 }
 
 .btn-container {
@@ -72,6 +89,7 @@ h1 {
     background-color: darkseagreen;
     font-size: 32px;
     cursor: pointer;
+    border-radius: 8px;
 }
 
 .btn:hover {
@@ -80,17 +98,21 @@ h1 {
 
 /* RECIPE */
 
-#recipe-container h2 {
-    margin: 32px 0 48px 0;
-    font-size: 38px;
+#recipe-container {
+    margin-top: 32px;
 }
 
-#recipe-container h3 {
-    font-size: 32px;
-    text-align: left;
+#recipe-container h2 {
+    font-size: 64px;
+    width: 100%;
+    margin-bottom: 22px;
 }
 
 #recipe-container ul {
     text-align: left;
     list-style: none;
+}
+
+#recipe-container li {
+    padding: 4px 0;
 }

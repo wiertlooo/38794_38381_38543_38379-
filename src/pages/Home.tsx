@@ -24,30 +24,37 @@ const Home: React.FC = () => {
 
     return (
         <div className="wrapper">
-            <h1>Przepis na...</h1>
+            <h1>Recipe for...</h1>
             <div className="btn-container">
                 <button className="btn" onClick={handleBreakfastClick}>
-                    Śniadanie
+                    Breakfast
                 </button>
                 <button className="btn" onClick={handleDinnerClick}>
-                    Obiad
+                    Dinner
                 </button>
                 <button className="btn" onClick={handleLunchClick}>
-                    Kolację
+                    Supper
                 </button>
-                <button className="btn">Deser</button>
+                <button className="btn">Dessert</button>
             </div>
             {buttonClicked && <RecipeComponent type={typeProp} />}
             <div id="recipe-container">
-                <h2>Zieloną fantazję</h2>
                 <div className="two-column">
                     <div className="col-left">
-                        <h3>Składniki:</h3>
+                        <h2>Green fantasy</h2>
                         <ul>
-                            <li>eggs: 4</li>
-                            <li>maple breakfast sausage links: 8</li>
-                            <li>milk: 100ml</li>
-                            <li>flour: 100g</li>
+                            <li>eggs - 4</li>
+                            <li>maple breakfast sausage links - 8</li>
+                            <li>milk - 100ml</li>
+                            <li>flour - 100g</li>
+                            <li>eggs - 4</li>
+                            <li>maple breakfast sausage links - 8</li>
+                            <li>milk - 100ml</li>
+                            <li>flour - 100g</li>
+                            <li>eggs - 4</li>
+                            <li>maple breakfast sausage links - 8</li>
+                            <li>milk - 100ml</li>
+                            <li>flour - 100g</li>
                         </ul>
                     </div>
                     <div className="col-right">
@@ -58,11 +65,17 @@ const Home: React.FC = () => {
                     </div>
                 </div>
 
-                <h2>Instrukcja:</h2>
+                <h2>Instruction</h2>
                 <p>
                     Preheat oven to 220°C. Arrange sausages in a baking dish.
                     Mix milk, eggs, and flour to form a batter. Pour over
-                    sausages and bake until puffed and golden.
+                    sausages and bake until puffed and golden. Preheat oven to
+                    220°C. Arrange sausages in a baking dish. Mix milk, eggs,
+                    and flour to form a batter. Pour over sausages and bake
+                    until puffed and golden. Preheat oven to 220°C. Arrange
+                    sausages in a baking dish. Mix milk, eggs, and flour to form
+                    a batter. Pour over sausages and bake until puffed and
+                    golden.
                 </p>
             </div>
         </div>
