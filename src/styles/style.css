@@ -3,7 +3,29 @@
     padding: 0;
 }
 
+html {
+    background-color: #fdd09f;
+}
+
 .wrapper {
-    max-width: 800px;
+    max-width: 1280px;
     margin: 0 auto;
+    text-align: center;
+    background-color: cadetblue;
+}
+
+h1 {
+    padding: 96px 0 64px 0;
+}
+
+.btn-container {
+    padding: 32px 16px;
+}
+
+.btn {
+    margin: 16px;
+    min-width: 160px;
+    line-height: 48px;
+    border: none;
+    background-color: darkseagreen;
 }

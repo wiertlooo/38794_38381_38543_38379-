@@ -24,12 +24,40 @@ const Home: React.FC = () => {
 
     return (
         <div className="wrapper">
-            <h1>AEH TOP PROJEKT</h1>
-            <button onClick={handleBreakfastClick}>BREAKFAST</button>
-            <button onClick={handleDinnerClick}>DINNER</button>
-            <button onClick={handleLunchClick}>LUNCH</button>
-            <button>DESSERT</button>
+            <h1>Przepis na...</h1>
+            <div className="btn-container">
+                <button className="btn" onClick={handleBreakfastClick}>
+                    Śniadanie
+                </button>
+                <button className="btn" onClick={handleDinnerClick}>
+                    Obiad
+                </button>
+                <button className="btn" onClick={handleLunchClick}>
+                    Kolację
+                </button>
+                <button className="btn">Deser</button>
+            </div>
             {buttonClicked && <RecipeComponent type={typeProp} />}
+            <div>
+                <h2>Toad in a Hole</h2>
+                <img
+                    src="https://img.freepik.com/free-photo/grilled-chicken-rice-spicy-chickpeas-avocado-cabbage-pepper-buddha-bowl_127032-1996.jpg?w=826&t=st=1718193180~exp=1718193780~hmac=717bd059b95c2ef7590d69d59b0d903b7599751e0c627e55b32b2cc037f86c5d"
+                    alt={`recipe.name`}
+                />
+                <h2>Ingredients:</h2>
+                <ul>
+                    <li>eggs: 4</li>
+                    <li>maple breakfast sausage links: 8</li>
+                    <li>milk: 100ml</li>
+                    <li>flour: 100g</li>
+                </ul>
+                <h2>Instructions:</h2>
+                <p>
+                    Preheat oven to 220°C. Arrange sausages in a baking dish.
+                    Mix milk, eggs, and flour to form a batter. Pour over
+                    sausages and bake until puffed and golden.
+                </p>
+            </div>
         </div>
     );
 };
