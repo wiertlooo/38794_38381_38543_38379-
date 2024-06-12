@@ -26,16 +26,19 @@ const Home: React.FC = () => {
         <div className="wrapper">
             <h1>Recipe for...</h1>
             <div className="btn-container">
-                <button className="btn" onClick={handleBreakfastClick}>
+                <button
+                    className="btn btn-breakfast"
+                    onClick={handleBreakfastClick}
+                >
                     Breakfast
                 </button>
-                <button className="btn" onClick={handleDinnerClick}>
+                <button className="btn btn-dinner" onClick={handleDinnerClick}>
                     Dinner
                 </button>
-                <button className="btn" onClick={handleLunchClick}>
+                <button className="btn btn-supper" onClick={handleLunchClick}>
                     Supper
                 </button>
-                <button className="btn">Dessert</button>
+                <button className="btn btn-dessert">Dessert</button>
             </div>
             {buttonClicked && <RecipeComponent type={typeProp} />}
             <div id="recipe-container">

@@ -13,13 +13,15 @@ html {
     background-color: #fdd09f;
     font-size: 24px;
     font-family: "Merriweather", serif;
-    font-weight: 00;
+    font-weight: 400;
+    color: #0a2540;
 }
 
 h1,
 h2,
 h3 {
     font-family: fontRegular;
+    color: #0a2540;
 }
 
 p {
@@ -82,18 +84,20 @@ h1 {
 }
 
 .btn {
-    margin: 16px;
+    margin: 18px;
     min-width: 196px;
     line-height: 64px;
     border: none;
-    background-color: darkseagreen;
+    background: #c0ba78;
     font-size: 32px;
     cursor: pointer;
     border-radius: 8px;
+    transition: 0.04s;
+    color: #0a2540;
 }
 
 .btn:hover {
-    background-color: aquamarine;
+    background: #e7df86;
 }
 
 /* RECIPE */
@@ -115,4 +119,24 @@ h1 {
 
 #recipe-container li {
     padding: 4px 0;
+    font-weight: 300;
+}
+
+@media only screen and (max-width: 980px) {
+    .two-column {
+        display: block;
+    }
+
+    .two-column > .col-left {
+        width: 100%;
+        padding: 0 16px 0 92px;
+        display: block;
+    }
+
+    .two-column > .col-right {
+        width: 100%;
+        padding: 0 0 0 16px;
+        display: block;
+        margin: 48px 0;
+    }
 }
