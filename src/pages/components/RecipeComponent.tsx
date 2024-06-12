@@ -36,7 +36,7 @@ const RecipeComponent: React.FC<RecipeComponentProps> = ({ type }) => {
     ));
 
     return (
-        <div>
+        <div id="recipe-container">
             <h2>{recipe.name}</h2>
             <img
                 style={{ width: 500 }}
