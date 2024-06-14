@@ -37,14 +37,19 @@ const RecipeComponent: React.FC<RecipeComponentProps> = ({ type }) => {
 
     return (
         <div id="recipe-container">
-            <h2>{recipe.name}</h2>
-            <img
-                style={{ width: 500 }}
-                src={recipe.imageURL}
-                alt={recipe.name}
-            />
-            <h2>Ingredients:</h2>
-            <ul>{componentsList}</ul>
+            <div className="two-column">
+                <div className="col-left">
+                    <h2>{recipe.name}</h2>
+                    <ul>{componentsList}</ul>
+                </div>
+            </div>
+            <div className="col-right">
+                <img
+                    className="anim-slide-in"
+                    src={recipe.imageURL}
+                    alt={recipe.name}
+                />
+            </div>
             <h2>Instructions:</h2>
             <p>{recipe.instruction}</p>
         </div>

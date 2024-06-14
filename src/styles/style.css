@@ -35,17 +35,6 @@ p {
     text-align: center;
 }
 
-img {
-    max-width: 80%;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    background-color: white;
-    box-shadow: 0px 0px 4px rgba(100, 100, 100);
-    transform: rotate(6deg);
-}
-
 /* LAYOUT */
 .two-column {
     width: 80%;
@@ -66,6 +55,7 @@ img {
 }
 
 .two-column > .col-right {
+    position: relative;
     width: 50%;
     padding: 0 0 0 16px;
     display: flex;
@@ -95,8 +85,9 @@ h1 {
     font-size: 32px;
     cursor: pointer;
     border-radius: 8px;
-    transition: 0.06s;
+    transition: background-color 0.16s;
     color: #0a2540;
+    box-shadow: 2px 2px 8px #0a2540;
 }
 
 .btn:hover {
@@ -123,6 +114,46 @@ h1 {
 #recipe-container li {
     padding: 4px 0;
     font-weight: 300;
+}
+
+.col-right img {
+    position: relative;
+    right: -200px;
+    top: -100px;
+    max-width: 80%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 4px rgba(100, 100, 100);
+    opacity: 0;
+    transform: rotate(18deg);
+}
+
+.anim-slide-in {
+    -webkit-animation: slide-in 0.4s forwards;
+    -webkit-animation-delay: 0.4s;
+    animation: slide-in 0.4s forwards;
+    animation-delay: 0.4s;
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        right: 0;
+        top: 0;
+        transform: rotate(2deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    100% {
+        right: 0;
+        top: 0;
+        transform: rotate(2deg);
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 980px) {
