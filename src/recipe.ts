@@ -8,6 +8,6 @@ export interface Recipe {
   readonly name: string;
   readonly components: Component[];
   readonly instruction: string;
-  readonly type: "BREAKFAST" | "LUNCH" | "DINNER";
+  readonly type: "BREAKFAST" | "LUNCH" | "DINNER" | "DESSERT";
   readonly imageURL: string;
 }
