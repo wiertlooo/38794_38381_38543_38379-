@@ -22,11 +22,6 @@ const Home: React.FC = () => {
         setButtonClicked(true);
     };
 
-    const handleDessertClick = () => {
-        setTypeProp("DESSERT");
-        setButtonClicked(true);
-    };
-
     return (
         <div className="wrapper">
             <h1>Recipe for...</h1>
