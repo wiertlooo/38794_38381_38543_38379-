@@ -66,13 +66,11 @@ const Home: React.FC = () => {
                         </ul>
                     </div>
                     <div className="col-right">
-                        <div className="img-wrap">
-                            <img
-                                // src="https://img.freepik.com/free-photo/grilled-chicken-rice-spicy-chickpeas-avocado-cabbage-pepper-buddha-bowl_127032-1996.jpg?w=826&t=st=1718193180~exp=1718193780~hmac=717bd059b95c2ef7590d69d59b0d903b7599751e0c627e55b32b2cc037f86c5d"
-                                src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2020/02/Chicken-Fajitas-7.jpg"
-                                alt={`recipe.name`}
-                            />
-                        </div>
+                        <img
+                            // src="https://img.freepik.com/free-photo/grilled-chicken-rice-spicy-chickpeas-avocado-cabbage-pepper-buddha-bowl_127032-1996.jpg?w=826&t=st=1718193180~exp=1718193780~hmac=717bd059b95c2ef7590d69d59b0d903b7599751e0c627e55b32b2cc037f86c5d"
+                            src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2020/02/Chicken-Fajitas-7.jpg"
+                            alt={`recipe.name`}
+                        />
                     </div>
                 </div>
                 <h2>Instruction</h2>
