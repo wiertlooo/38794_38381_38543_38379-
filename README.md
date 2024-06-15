@@ -1,3 +1,20 @@
+# Projekt zespołowy - xxxxx_xxxxx_xxxxx_xxxxx
+
+Projekt aplikacji internetowej "Przepis na..."
+
+Aplikacja pozwala użytkownikowi na wyświetlenie losowego przepisu kulinarnego z 4 kategorii:
+
+1. Śniadanie
+2. Obiad
+3. Kolacja
+4. Deser
+
+Na przepis składa się - nazwa, lista składników, zdjęcie oraz instrukcja wykonania.
+
+Użytkownik losuje przepis używając przycisków.
+
+//////////////////////////
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
