@@ -29,6 +29,10 @@ html {
     color: #0a2540;
 }
 
+body {
+    min-height: 100vh;
+}
+
 h1,
 h2 {
     font-family: fontRegular;
