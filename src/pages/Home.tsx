@@ -40,7 +40,9 @@ const Home: React.FC = () => {
         <button className="btn btn-supper" onClick={handleLunchClick}>
           Supper
         </button>
-        <button className="btn btn-dessert">Dessert</button>
+        <button className="btn btn-dessert" onClick={handleDessertClick}>
+          Dessert
+        </button>
       </div>
       {buttonClicked && <RecipeComponent type={typeProp} />}
 
