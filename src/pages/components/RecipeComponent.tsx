@@ -43,7 +43,11 @@ const RecipeComponent: React.FC<RecipeComponentProps> = ({ type }) => {
                     <ul>{componentsList}</ul>
                 </div>
                 <div className="col-right">
-                    <img src={recipe.imageURL} alt={recipe.name} />
+                    <img
+                        className="anim-slide-in"
+                        src={recipe.imageURL}
+                        alt={recipe.name}
+                    />
                 </div>
             </div>
             <h2>Instructions:</h2>
