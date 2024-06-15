@@ -140,6 +140,11 @@ h1 {
     background-color: white;
     box-shadow: 0px 0px 4px rgba(100, 100, 100);
     transform: rotate(2deg);
+    transition: transform 0.6s;
+}
+
+.col-right img:hover {
+    transform: rotate(6deg);
 }
 
 .anim-slide-in {
