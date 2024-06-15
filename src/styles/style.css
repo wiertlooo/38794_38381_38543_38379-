@@ -10,7 +10,19 @@
 }
 
 html {
-    background-color: #fdd09f;
+    /* background-color: #fdd09f; */
+    /* background: rgb(231, 223, 134);
+    background: linear-gradient(
+        0deg,
+        rgba(231, 223, 134, 1) 20%,
+        rgba(243, 216, 159, 1) 100%
+    ); */
+    background: rgb(253, 208, 159);
+    background: linear-gradient(
+        0deg,
+        rgba(253, 208, 159, 1) 20%,
+        rgba(243, 216, 159, 1) 100%
+    );
     font-size: 24px;
     font-family: "Merriweather", serif;
     font-weight: 400;
