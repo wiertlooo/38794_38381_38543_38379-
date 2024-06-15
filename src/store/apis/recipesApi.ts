@@ -6,6 +6,7 @@ const recipesApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "http://localhost:8080/api/v1/recipes",
   }),
+  tagTypes: ["Recipe"],
   endpoints(builder) {
     return {
       fetchRecipe: builder.query<Recipe, string | undefined>({
@@ -13,6 +14,9 @@ const recipesApi = createApi({
           url: `/random?type=${recipeType}`,
           method: "GET",
         }),
+        providesTags: (result, error, recipeType) => [
+          { type: "Recipe", id: recipeType },
+        ],
       }),
     };
   },
